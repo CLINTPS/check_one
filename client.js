@@ -10,7 +10,7 @@ import protoLoader from "@grpc/proto-loader";
     })
 
     const UserService =grpc.loadPackageDefinition(packageDefinition).UserService;
-
+    console.log("Check client 13th line");
     const client =new UserService("127.0.0.1:30043",
         grpc.credentials.createInsecure()
     );
